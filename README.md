@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Validation 
+We had to validate that a Category had a name and that it was unique
 
-Things you may want to cover:
+* Category Description 
+We had to add a description column to our database, we made it so that each category had it's own description. we added Category.description to the show.html.erb in categories to put the description on the page. 
 
-* Ruby version
+* C - Action:
+We had to create def to make category look for params and then created an if statement to a save categories and redirect it to categories_path 
 
-* System dependencies
+* R - Action 
+We had to create a index def and in the view we created an index.html.erb so we could show what the controller is passing to the view. 
 
-* Configuration
+* U - Action: 
+We created an update def that if the params are updated redirect to the category_path 
 
-* Database creation
+* D - Action: 
+We created a destroy def that would delete a category once it found it's params and would delete it from the database as a whole 
 
-* Database initialization
+* Category Count
+We added a line of erb code to the index.html.erb inside of categories in view. this allowed us to show the number of articles in each category 
 
-* How to run the test suite
+* Style the pages using css 
+We styled the application using css in the stylesheets 
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Read.me 
+We created a Read.me with step by step of the process 

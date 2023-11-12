@@ -1,0 +1,16 @@
+body {
+    background-image: url(https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?cs=srgb&dl=pexels-simon-berger-688660.jpg&fm=jpg);
+}
+
+h1 {
+    font-family: Helvetica;
+    color: goldenrod ; 
+}
+
+ul {
+    color: white;
+}
+
+li {
+    color:coral
+}

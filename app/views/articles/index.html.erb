@@ -4,7 +4,7 @@ Our blog has <%= Article.public_count %> articles and counting!
   <% @articles.each do |article| %>
     <% unless article.archived? %>
       <li>
-        <%= link_to article.title, category_articles_path(article.category, article) %>
+        <%= link_to article.title, category_article_path(article.category, article) %>
       </li>
     <% end %>
   <% end %>

@@ -1,0 +1,16 @@
+body {
+    background-image: url(https://media.istockphoto.com/id/1209185877/photo/gray-bridge-and-pink-color-trees.webp?b=1&s=170667a&w=0&k=20&c=J_IbfYSeHbvIPNi9qjPmVJ2RyJldc_gjGimDPpwmqtc=);
+}
+
+h1 {
+    font-family: Helvetica;
+    color: goldenrod ; 
+}
+
+ul {
+    color: white;
+}
+
+li {
+    color:coral
+}

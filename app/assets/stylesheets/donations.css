@@ -9,7 +9,7 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 500px;
     text-align: center;
@@ -31,4 +31,13 @@ header {
     margin-left: 850px;
     margin-top: 100px;
     color:white
+}
+
+
+
+#card-container {
+  border: 1px solid #FFFFFF;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgb(222, 9, 9);
 }

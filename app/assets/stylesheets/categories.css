@@ -1,5 +1,6 @@
 body {
-    background-image: url(https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?cs=srgb&dl=pexels-simon-berger-688660.jpg&fm=jpg);
+    background-image: url(https://www.publicdomainpictures.net/pictures/30000/velka/sunset-in-harbor.jpg);
+    
 }
 
 h1 {
@@ -9,8 +10,13 @@ h1 {
 
 ul {
     color: white;
+    animation: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    font-style: italic;
+    font-size: 30px;
 }
 
 li {
-    color:coral
+    color:rgb(10, 236, 108)
 }

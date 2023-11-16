@@ -1,0 +1,15 @@
+{
+  "name": "Zakaria",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Zmuse001/blog.git",
+  "license": "MIT",
+  "description": "Blog app",
+  "author": "Zakaria Muse",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.27"
+  }
+}

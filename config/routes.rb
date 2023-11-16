@@ -1,11 +1,16 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  root 'categories#index'
+  get 'donations/new'
+  get 'donations/create'
+  # root 'articles#index'
+  get 'up' => 'rails/health#show', as: :rails_health_check
 
-  resources :categories do 
+  root 'categories#index'
+  resources :categories do
     resources :articles do
       resources :comments
     end
   end
+  resources :donations, only: %i[new create]
 end

@@ -1,8 +1,34 @@
 body {
-    background-image: url(https://www.publicdomainpictures.net/pictures/30000/velka/dollar-wallpaper.jpg);
+    background-image: url(https://www.publicdomainpictures.net/pictures/270000/velka/money-transfer-banking-icon-bu.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
-#card-container {
-    margin: 0;
-    padding: 0;
+#donation-form {
+    background-color: #F0F0F0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    margin-left: 700px;
+    margin-top: 100px;
+}
+
+#donation-form .field label[for="donation_amount"],
+  #donation-form .field input#donation_amount {
+    margin-right: 14px;
+  }
+ 
+  #donation-form .field label[for="donation_email"],
+  #donation-form .field input#donation_email {
+    margin-right: 28px;
+  }
+  
+header {
+    margin-left: 850px;
+    margin-top: 100px;
+    color:white
 }

@@ -1,4 +1,9 @@
+<header>
+<%= stylesheet_link_tag 'donations' %>
 <h1>Make a Donation</h1>
+</header>
+
+
 <%= form_with(model: @donation, irl: donations_path,
 method: 'post', local: true, id: 'donation-form') do |form| %>
     <div class="field">
@@ -23,6 +28,5 @@ method: 'post', local: true, id: 'donation-form') do |form| %>
     </div>
     <div id="card-errors" role="alert"></div>
     <button id="donate-button" class ="btn btn-primary">Donate</button>
-    </div>
-    
     <%end  %>
+    </div>

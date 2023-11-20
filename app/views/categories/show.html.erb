@@ -1,11 +1,7 @@
-<header>
-<%= stylesheet_link_tag 'articles' %>
-</header>
-
+<head> <%= stylesheet_link_tag 'style' %>
+</head>
 <h1><%= @category.name %></h1>
-
 <p><%= @category.description %></p>
-
 <ul>
 <li><%= link_to "Articles", category_articles_path(@category, @articles) %></li>
   <li><%= link_to "Edit", edit_category_path(@category) %></li>
@@ -14,3 +10,5 @@
     turbo_confirm: "Are you sure?"
   } %></li>
 </ul>
+
+<%= link_to 'Create Article', new_category_article_path(@category) %>

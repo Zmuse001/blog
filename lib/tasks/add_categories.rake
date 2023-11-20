@@ -1,14 +1,16 @@
-namespace :db do 
-    desc "Add four categories to the database"
-    task add_categories: :environment do 
-            #define your category names here
-            category_names = ["Technology", "Travel", "Food", "Fashion"]
+# frozen_string_literal: true
 
-            category_names.each do |name| 
-                Category.find_or_create_by!(name: name)
-                puts "Category `#{name}` added"
-            end
+namespace :db do
+  desc 'Add four categories to the database'
+  task add_categories: :environment do
+    # define your category names here
+    category_names = %w[Technology Travel Food Fashion]
 
-            puts "Categories added succesfully."
+    category_names.each do |name|
+      Category.find_or_create_by!(name:)
+      puts "Category `#{name}` added"
     end
+
+    puts 'Categories added succesfully.'
+  end
 end

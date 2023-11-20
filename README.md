@@ -1,4 +1,13 @@
-# README
+# BLOG
+
+* General Information 
+This application is a blog where people can come and read up on the many different topics of their interests. 
+
+* Features 
+You can Look at articles,
+You can look at the many Categories o even create your own,
+You can delete any category you no longer need,
+You can edit something that's outdated or no longer useful 
 
 * Validation 
 We had to validate that a Category had a name and that it was unique

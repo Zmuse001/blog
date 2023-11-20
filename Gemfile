@@ -29,7 +29,7 @@ gem 'stimulus-rails'
 gem 'jbuilder'
 
 # dotenv for enviornment variables
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails', groups: %i[development test]
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
@@ -50,10 +50,10 @@ gem 'bootsnap', require: false
 # gem "image_processing", "~> 1.2"
 
 # stripe for payments
-gem "stripe"
+gem 'stripe'
 
 # webpacker for javascript
-gem "webpacker"
+gem 'webpacker'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

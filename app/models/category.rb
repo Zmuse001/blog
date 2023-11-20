@@ -1,5 +1,7 @@
-class Category < ApplicationRecord
-    has_many :articles, dependent: :destroy
+# frozen_string_literal: true
 
-    validates :name, presence: true, uniqueness: true
+class Category < ApplicationRecord
+  has_many :articles, dependent: :destroy
+
+  validates :name, presence: true, uniqueness: true
 end

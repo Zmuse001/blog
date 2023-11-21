@@ -16,6 +16,11 @@ $(function() {
             submitButton.prop('disabled', false);
         }
     });
+
+    $("#like").on ('toggle',function(){
+        $(this).css('border-color', 'blue');
+    });
+
     //dynamic content loading for comments 
     $('#load-comments').on('click', function(){
         const categoryid = $('#category-id').data('category');

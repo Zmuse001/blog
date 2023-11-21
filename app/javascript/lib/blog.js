@@ -18,10 +18,26 @@ $(function() {
     });
     //dynamic content loading for comments 
     $('#load-comments').on('click', function(){
-        const url = '/categories/5/articles/14/comments';
+        const categoryid = $('#category-id').data('category');
+        const articleid = $('#load-comments').data('article');
+        console.log(categoryid);
+        console.log(article.id);
+        const url = `/categories/${categoryid}/articles/${articleid}/comments`;
         console.log($.getJSON(url));
         $.getJSON(url, function(data){
             console.log(data);
+            //Append the new comments to the container #comments
+            ("p").append("#comments")
         })
+        // add .fail callback to handle error messaging
+        $.getJSON(url)
+            .done(function(data) {
+                // Success callback
+                console.log('Success:', data);
+            })
+            .fail(function(xhr, textStatus, errorThrown) {
+                // Error callback
+                console.error('Error:', textStatus, errorThrown);
+            });
     });
 }); 

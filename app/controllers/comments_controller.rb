@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class CommentsController < ApplicationController
-  
+  before_action :authenticate_user!, only: [:destroy]
 
   def index
     @comments = Comment.where(article_id: params[:article_id])
@@ -9,6 +9,7 @@ class CommentsController < ApplicationController
   end
 
   def create
+    before_action :authenticate_user!
     @category = Category.find(params[:category_id])
     @article = Article.find(params[:article_id])
 

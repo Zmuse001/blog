@@ -1,25 +1,25 @@
 <% if user_signed_in? %>
-<header>
-<div> Welcome <%= current_user.username %> </div>
 <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
-
-</header>
-
-<ul>
-  <% @categories.each do |category| %>
-    <li><%= link_to category.name,category_path(category) %> <%= category.articles.count %></li>
-    <%= category.description %>
-  <% end %>
-</ul>
-<%= link_to "New Category", new_category_path(@category) %>
 <% else %>
 <%= button_to "Sign in", new_user_session_path%>
+<% end %>
+<header>
 <ul>
   <% @categories.each do |category| %>
     <li><%= link_to category.name,category_path(category) %> <%= category.articles.count %></li>
     <%= category.description %>
   <% end %>
 </ul>
-<% end %>
+</header>
+<%= link_to "New Category", new_category_path(@category) %>
+
+
+<ul>
+  <% @categories.each do |category| %>
+    <li><%= link_to category.name,category_path(category) %> <%= category.articles.count %></li>
+    <%= category.description %>
+  <% end %>
+</ul>
+<div> Welcome <%= current_user.username %> </div>
 
 
